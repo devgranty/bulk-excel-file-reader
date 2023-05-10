@@ -28,16 +28,16 @@ __________________________________
 
 # Endpoints:
 __________________________________
-POST /v1/products       : create new product
-GET /v1/products        : get all products
-GET /v1/product/:id     : find product with ID
-PATCH /v1/product/:id   : update product with ID
-DELETE /v1/product/:id  : delete product with ID
+* POST /v1/products       : create new product
+* GET /v1/products        : get all products
+* GET /v1/product/:id     : find product with ID
+* PATCH /v1/product/:id   : update product with ID
+* DELETE /v1/product/:id  : delete product with ID
 
 
 # Fields:
 __________________________________
-name        : Name of product
-price       : Price of product
-description : Description of product
-filename    : This is the name of the excel/csv file to be read. E.g "Sample-Spreadsheet-100-rows.csv"
+* name        : Name of product
+* price       : Price of product
+* description : Description of product
+* filename    : This is the name of the excel/csv file to be read. E.g "Sample-Spreadsheet-100-rows.csv"
