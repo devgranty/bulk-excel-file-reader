@@ -1,6 +1,4 @@
 # ECR-EXCEL-READER
-__________________________________
-
 Create  an API based application that reads an xlsx/CSV or excel document and;
 uploads the content of this document to the database;
 the database should also contain the following columns (name, price, description, document, createdAt, updateAt);
@@ -14,20 +12,17 @@ Note;
 1. Review would be on code structure and everything OOP. -->
 
 # Usage:
-__________________________________
 1. npm install
 2. create database "ecr_excel_reader_db" and import the file in root dir "ecr_excel_reader_db.sql"
 3. run "npm run serve" to start application
 
 
 # Note:
-__________________________________
 1. All excel/csv files must be in documents directory
 2. Change .env variables to your db credentials
 
 
 # Endpoints:
-__________________________________
 * POST /v1/products       : create new product
 * GET /v1/products        : get all products
 * GET /v1/product/:id     : find product with ID
@@ -36,7 +31,6 @@ __________________________________
 
 
 # Fields:
-__________________________________
 * name        : Name of product
 * price       : Price of product
 * description : Description of product
