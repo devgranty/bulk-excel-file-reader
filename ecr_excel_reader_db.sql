@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 06, 2023 at 10:26 AM
+-- Generation Time: May 11, 2023 at 01:26 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -29,10 +29,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `_products` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `price` decimal(10,2) UNSIGNED NOT NULL,
-  `description` text NOT NULL,
-  `document` longtext NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `price` decimal(10,2) UNSIGNED DEFAULT NULL,
+  `description` text DEFAULT NULL,
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

@@ -4,7 +4,7 @@
   "description": "This a simple nodejs app that reads an excel file and stores the content of this file in a DB.",
   "main": "app.js",
   "scripts": {
-    "serve": "node app.js",
+    "serve": "nodemon app.js",
     "test": "nodemon app.test.js"
   },
   "author": "Grant Adiele",

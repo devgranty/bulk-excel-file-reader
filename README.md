@@ -1,7 +1,7 @@
-# ECR-EXCEL-READER
-Create  an API based application that reads an xlsx/CSV or excel document and;
-uploads the content of this document to the database;
-the database should also contain the following columns (name, price, description, document, createdAt, updateAt);
+# BULK-EXCEL-FILE-READER
+Create an API based application that reads an bulk excel document and;
+uploads each of content row in a database column;
+the database should also contain the following columns (name, price, description, createdAt, updateAt);
 
 <!-- requirements;
 1. Node.Js
@@ -34,4 +34,4 @@ Note;
 * name        : Name of product
 * price       : Price of product
 * description : Description of product
-* filename    : This is the name of the excel/csv file to be read. E.g "Sample-Spreadsheet-100-rows.csv"
+* filename    : This is the name of the excel/csv file to be read. E.g "sample.csv"
