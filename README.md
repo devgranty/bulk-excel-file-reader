@@ -22,7 +22,6 @@ git clone https://github.com/devgranty/bulk-excel-file-reader.git
 
 To clone this repository
 
-
 ### Prerequisites
 
 ```console
@@ -34,8 +33,8 @@ To install dependencies
 ```console
 npm start
 ```
-To start app
 
+To start app
 
 ## Usage <a name = "usage"></a>
 
