@@ -36,10 +36,10 @@ npm start
 
 To start app
 
-## Usage <a name = "usage"></a>
-
 - Create database "ecr_excel_reader_db" and import the file in root dir "ecr_excel_reader_db.sql" in your database.
 - Create .env variables to your database credentials.
+
+## Usage <a name = "usage"></a>
 
 ### Endpoints
 
