@@ -1,37 +1,59 @@
-# BULK-EXCEL-FILE-READER
-Create an API based application that reads an bulk excel document and;
-uploads each of content row in a database column;
-the database should also contain the following columns (name, price, description, createdAt, updateAt);
+# Bulk Excel File Reader
 
-<!-- requirements;
-1. Node.Js
-2. Express.Js
-3. MySQL
+## Table of Contents
 
-Note;
-1. Review would be on code structure and everything OOP. -->
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Contributing](../CONTRIBUTING.md)
 
-# Usage:
-1. npm install
-2. create database "ecr_excel_reader_db" and import the file in root dir "ecr_excel_reader_db.sql"
-3. run "npm run serve" to start application
+## About <a name = "about"></a>
 
+This a simple nodejs app that reads an excel file and stores its contents in a Database.
 
-# Note:
-1. All excel/csv files must be in documents directory
-2. Change .env variables to your db credentials
+## Getting Started <a name = "getting_started"></a>
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-# Endpoints:
-* POST /v1/products       : create new product
-* GET /v1/products        : get all products
-* GET /v1/product/:id     : find product with ID
-* PATCH /v1/product/:id   : update product with ID
-* DELETE /v1/product/:id  : delete product with ID
+### Installing
+
+```console
+git clone https://github.com/devgranty/bulk-excel-file-reader.git
+```
+
+To clone this repository
 
 
-# Fields:
-* name        : Name of product
-* price       : Price of product
-* description : Description of product
-* filename    : This is the name of the excel/csv file to be read. E.g "sample.csv"
+### Prerequisites
+
+```console
+npm install
+```
+
+To install dependencies
+
+```console
+npm start
+```
+To start app
+
+
+## Usage <a name = "usage"></a>
+
+- Create database "ecr_excel_reader_db" and import the file in root dir "ecr_excel_reader_db.sql" in your database.
+- Create .env variables to your database credentials.
+
+### Endpoints
+
+- POST /v1/products       : create new product      :   fields [ filename ]
+- GET /v1/products        : get all products
+- GET /v1/product/:id     : find product with ID
+- PATCH /v1/product/:id   : update product with ID  :   fields [ name, price, description ]
+- DELETE /v1/product/:id  : delete product with ID
+
+### Fields
+
+- name        : Name of product
+- price       : Price of product
+- description : Description of product
+- filename    : This is the name of the excel/csv file to be read. E.g "sample.csv"

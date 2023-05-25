@@ -1,11 +1,10 @@
 {
-  "name": "ecr-excel-reader",
+  "name": "bulk-excel-file-reader",
   "version": "1.0.0",
   "description": "This a simple nodejs app that reads an excel file and stores the content of this file in a DB.",
   "main": "app.js",
   "scripts": {
-    "serve": "nodemon app.js",
-    "test": "nodemon app.test.js"
+    "start": "node app.js"
   },
   "author": "Grant Adiele",
   "license": "ISC",
