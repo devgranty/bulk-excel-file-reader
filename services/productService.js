@@ -11,13 +11,13 @@ class Product extends Database {
     // Create a product from an excel file and store in DB
     createProduct = async (req, res) => {
         try {
-            const { filename } = req.body;
+            const { filename } = req.files;
             const currentDatetime = new Date();
             const filesystem = new FileSystem();
             let dataCount = 0;
 
             // Check for missing field values
-            if(!filename){
+            if(!filename.originalFilename){
                 return res.status(400).json({
                     message: 'Missing required data',
                     success: false
@@ -25,7 +25,7 @@ class Product extends Database {
             }
 
             // Perform validation on excel file
-            const document = await filesystem.validateDocument(filename);
+            const document = await filesystem.readExcelFile(filename);
             if(!document){
                 return res.status(415).json({
                     message: 'Unsupported file type in field filename or file does not exist.',

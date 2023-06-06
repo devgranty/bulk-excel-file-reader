@@ -25,9 +25,8 @@ class Database {
             this.db.query(sql, params, (error, results) => {
                 if(error){
                     reject(error);
-                }else{
-                    resolve(results);
                 }
+                resolve(results);
             });
         });
     }
@@ -39,8 +38,8 @@ class Database {
             const results = await this.executeQuery(sql);
             return results;
         } catch (error) {
-            console.log('Error fetching records:', error);
-            throw error;
+            // console.log('Error fetching records:', error);
+            throw new Error(error);
         }
     }
 
@@ -52,8 +51,8 @@ class Database {
             const results = await this.executeQuery(sql);
             return results;
         } catch (error) {
-            console.log('Error fetching record:', error);
-            throw error;
+            // console.log('Error fetching record:', error);
+            throw new Error(error);
         }
     }
 
@@ -64,8 +63,8 @@ class Database {
             const results = await this.executeQuery(sql, data);
             return results.insertId;
         } catch (error) {
-            console.log('Error inserting record:', error);
-            throw error;
+            // console.log('Error inserting record:', error);
+            throw new Error(error);
         }
     }
 
@@ -76,8 +75,8 @@ class Database {
             const results = await this.executeQuery(sql, data);
             return results.affectedRows;
         } catch (error) {
-            console.log('Error updating record:', error);
-            throw error;
+            // console.log('Error updating record:', error);
+            throw new Error(error);
         }
     }
 
@@ -88,8 +87,8 @@ class Database {
             const results = await this.executeQuery(sql);
             return results.affectedRows;
         } catch (error) {
-            console.log('Error deleting record:', error);
-            throw error;
+            // console.log('Error deleting record:', error);
+            throw new Error(error);
         }
     }
 }
